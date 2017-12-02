@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^login/$', login, {'template_name': 'account/Login.html'}),
     url(r'^logout/$', logout, {'template_name': 'account/logout.html'}),
     url(r'^register/$', views.register, name='register'),
+    url(r'^project/$', views.project, name='project'),
     url(r'^profile/$', views.profile, name='view_profile'),
     url(r'^profile/edit/$', views.edit_profile, name='edit_profile'),
 ]

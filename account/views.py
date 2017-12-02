@@ -42,6 +42,7 @@ def edit_profile(request):
         args = {'form':form}
         return render(request, "account/edit_profile.html", args)
 
-
+def project(request):
+    return render(request, 'account/project.html')
 
 
