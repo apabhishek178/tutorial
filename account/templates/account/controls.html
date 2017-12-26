@@ -21,20 +21,15 @@
             margin: 100px auto;
         }
     </style>
-    <h2>Controls</h2>
-    <button class="btn" onclick="pinon()">PinOn</button>
-    <button class="btn" onclick="pinoff()">PinOff</button>
-    <h3 id="fn"></h3>
-    <script>
-        function pinon() {
+    <h1>Controls</h1>
+     <div class="container">
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn">PinOn</button>
+                <button type="submit" class="btn">PinOff</button>
+            </form>
+     </div>
 
-        }
-
-        function pinoff() {
-
-
-        }
-    </script>
 </body>
 
 </html>
