@@ -10,4 +10,4 @@ def controls(request):
         return redirect('/account/')
 
     else:
-       return render(request, 'account/controls.html')
+        return render(request, 'account/controls.html')
